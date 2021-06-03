@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include ../head
+	body
+		section.home.none
+			header.menu
+				.container
+					a.logo(href="index.html")
+						img(src="../assets/img/logo.png", alt="")
+					a.toggle(href="#") 
+						i.fa.fa-bars
+					ul.nav#menu_toggle
+						li.item
+							a.link(href="index.html")
+								|Inicio
+		section.blank.spectre.yellow.gallery
+			.container
+				.title
+					h2 Galeria.
+				.items
+					.gallery_item
+						.item
+							a(target="_blank" href="https://www.icmare.com/include/uploads/0CC04EFF8238.jpeg", title="Add a description of the image here")
+								img(src="https://www.icmare.com/include/uploads/0CC04EFF8238.jpeg" alt="Forest")
+							.desc Add a description of the image here Add a description of the image here
+
+		section.slider-content
+			.container
+				h2 Nuestros aliados
+				.slider.multiple-items
+					a(href="https://www.mayorca.com.co/" target="_blank").item
+						img(src="../assets/img/logo_mayorca.png", alt="Aliado C.C. Mayorca Mare")
+						span C.C Mayorca
+					.item
+						img(src="../assets/img/logo_asga_innovation.png", alt="Aliado Asga Innovation Mare")
+						span Asga Innovation
+					a(href="https://www.quecodigo.com" target="_blank").item
+						img(src="https://www.quecodigo.com/img/logo-imagen.png", alt="Alido QuéCódigo Mare")
+						span QuéCódigo
+					a(href="https://todoenartes.com/" target="_blank").item
+						img(src="../assets/img/logo-todo_en_artes.png", alt="Alido Todo en Artes Mare")
+						span Todo en Artes
+					a(href="http://i3m.com.co/" target="_blank").item
+						img(src="../assets/img/logo-i3m.png", alt="Alido I3M Mare")
+						span I3M
+					a(href="http://experiencesteam.co/" target="_blank").item
+						img(src="../assets/img/logo-experience.png", alt="Alido Todo en Artes Mare")
+						span Experience STEAM
+					a(href="https://www.ardobot.com/" target="_blank").item
+						img(src="https://scontent.feoh3-1.fna.fbcdn.net/v/t1.0-1/p200x200/10625070_703304983095781_6715128987015689118_n.jpg?_nc_cat=0&oh=64dc8a2be1db3804384ca7e503720450&oe=5C0490BE", alt="Aliado Ardobot Mare")
+						span Ardobot
+		footer
+			.container
+				.copyright
+					|Todos los derechos reservados MARE Colombia 2018
+				.desing
+					|Desarrollado por
+					a(href="https://www.quecodigo.com" target="_blank") @QuéCódigo

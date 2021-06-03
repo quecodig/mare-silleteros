@@ -1,0 +1,84 @@
+@import "reset";
+
+body{
+	background: url("../img/bg_home.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	color: #FFFFFF;
+
+	&:before{
+		content: "";
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background: rgba(0,0,0,0.7);
+	}
+
+	.object-izq img,
+	.object-der img{
+		z-index: 2;
+		width: 70px;
+		position: absolute;
+
+		@media only screen and (max-width: 766px){
+			width: 30px;
+		}
+	}
+
+	.object-izq img{
+		top: 70px;
+	}
+
+	.object-der img{
+		right: 0;
+		bottom: 70px;
+	}
+}
+
+
+.container{
+	z-index: 2;
+	position: relative;
+	transition: -webkit-transform 0.25s ease-in-out 0s;
+
+	.content{
+		padding: 9em 0;
+		text-align: center;
+		position: relative;
+
+		@media only screen and (max-width: 766px){
+			padding: 20px;
+		}
+
+		.logo img{
+			width: 20%;
+			float: none;
+
+			@media only screen and (max-width: 766px){
+				width: 70%;
+			}
+		}
+
+		.text{
+			font-size: 3em;
+
+			@media only screen and (max-width: 766px){
+				font-size: 2em;
+			}
+
+			.tag{
+				color: steelblue;
+				font-family: "Branding-B";
+			}
+		}
+
+		.button{
+			margin: 15px 5px;
+		}
+	}
+}
